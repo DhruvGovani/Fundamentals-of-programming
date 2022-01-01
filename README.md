@@ -63,7 +63,48 @@ Data that is stored sequentially using memory locations.
 
 #### Array
 Array is sequential collection of information(data/item) of same type
+
+Arrays can be allocated both statically and dynamically.
+
+A Single item of an array is called element. thus collection of elements of same type is called an Array.
+
+##### One Dimensional Array
+Array Containing the items of same types which can be access and stored at sinlge index.
+
+**Example**
+```swift
+let anUserNames : [String] = ["Ramesh","Mahesh","Suresh"]; // This is an Array containing the User names... User names are of type string so we can say that 'anUserNames is an Array of Strings'.
+```
+
+##### Multi Dimensional Array
+A Multi-dimensional array associates each of its elements with multiple indexes.
+Multi Dimensional Array is also known as a table or matrix.
+An Array of Array can be called multidimensional array.
+
+**Example**
+```swift
+let player = [
+       ["A", "B", "C", "D", "E"],
+       ["F", "G", "H", "G", "M"],
+       ["H", "I", "J", "K", "L"],
+       ["M", "N", "O", "P", "Q"],
+       ["R", "S", "T", "U", "V"]
+    ]
+
+for p in player {
+    for value in p{
+        print(value)
+    }
+}
+
+//Printing the element from  row 3 and column 4
+// Column = Vertical arrangement of items.
+// Row = Horizontal arrangement of items
+print(player[3][4])
+//Output : Q
+```
 #### Stack
+
 #### Queue
 #### Linked List
 
